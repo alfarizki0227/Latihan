@@ -1,0 +1,233 @@
+/* ====== GLOBAL ====== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: rgba(34, 34, 34);;
+}
+
+img {
+  display: block;
+}
+
+
+
+/* ====== NAVBAR CUSTOM (pelengkap bootstrap) ====== */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #f4c27a;
+  border-bottom: 3px solid #f4c27a;
+  padding-bottom: 5px;
+}
+
+/* ====== KOTAK GRID ====== */
+.kotak {
+  background-color: white;
+  padding: 20px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.box {
+  min-height: 100px;
+}
+
+
+
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sb1 {
+  padding: 10px;
+  margin-top: 20px;
+  max-width: 300px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.produk {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.tombol {
+  background-color: rgba(34, 34, 34);
+  width: 120px;
+  border-radius: 10px;
+  padding: 8px;
+  border: none;
+  color: #f4c27a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tombol:hover {
+  transform: scale(1.05);
+}
+
+/* ====== MAIN ====== */
+.main {
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.makanan {
+  color: rgba(34, 34, 34);
+  text-align: center;
+}
+
+.baksolava {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.penjelasan {
+  margin-bottom: 20px;
+}
+
+/* ====== KANAN / SIDEBAR ====== */
+.kanan1,
+.kanan2 {
+  border-radius: 8px;
+}
+
+.kanan1 {
+  max-width: 300px;
+  border: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.jadwal {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px 6px 0 0;
+}
+
+.toko {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0 0 6px 6px;
+}
+
+.buka {
+  text-align: center;
+  font-weight: bold;
+}
+
+.jadwalbuka {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* ====== BERITA ====== */
+.berita {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.berita1 {
+  background-color: rgba(34, 34, 34);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.berita2 {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.berita2:hover {
+  background-color: #f7f2ec;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  grid-column: 1 / 4;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(34, 34, 34);
+  color: white;
+  border-radius: 6px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .kotak {
+    grid-template-columns: 1fr;
+  }
+
+  .gambar {
+    grid-column: 1;
+  }
+
+  .kanan1,
+  .kanan2,
+  .sb1,
+  .main {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 15px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+.hover-aktif {
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}

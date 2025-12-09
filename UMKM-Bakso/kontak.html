@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> 
+        <div class="container"> 
+            <a class="navbar-brand" href="#"> 
+                <img src="galeri/logo.png" alt="Logo UMKM" width="40" height="40"/> 
+            </a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li> 
+                </ul> 
+            </div> 
+        </div> 
+    </nav>
+
+     <main> 
+    <h2>Hubungi Kami</h2> 
+    <p>Silakan isi formulir berikut untuk menghubungi tim Kopi 
+Nusantara:</p> 
+ 
+    <form id="formKontak" action="#" method="post"> 
+        <label for="nama">Nama:</label><br> 
+        <input type="text" id="nama" name="nama" required /><br><br> 
+        <label for="email">Email:</label><br> 
+        <input type="email" id="email" name="email" required /><br><br> 
+        <label for="kategori">Kategori Pesan:</label><br> 
+        <select id="kategori" name="kategori"> 
+            <option value="umum">Umum</option>
+            <option value="produk">Produk</option> 
+            <option value="kerjasama">Kerja Sama</option> 
+        </select><br><br> 
+        <label for="pesan">Pesan:</label><br> 
+        <textarea id="pesan" name="pesan" rows="5" cols="30"></textarea><br><br>
+        <input type="checkbox" id="langganan" name="langganan" value="ya"> 
+        <label for="langganan">Saya ingin menerima newsletter</label><br><br> 
+        <button type="submit">Kirim</button>
+        <p id="errorMsg" style="color:red;"></p> 
+    </form>  
+
+  </main> 
+ 
+  <footer> 
+    <p>&copy; 2025 Kopi Nusantara</p> 
+  </footer> 
+  
+  <script>
+        if (!valid) { 
+        event.preventDefault(); // Gagalkan submit 
+      } else { 
+        // beri komentar pada else disini karena sudah menggunakan form.js 
+        // alert("Pesan berhasil dikirim!"); 
+        // form.reset(); 
+      }
+    </script>
+</body>
+</html>
